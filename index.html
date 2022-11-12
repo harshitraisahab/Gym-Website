@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/Fitness-Trends-2021-c.webp');
+
+    }
+
+    .left {
+        position: absolute;
+        left: 24px;
+        top: 8px;
+        display: inline-block;
+        /* border: 2px solid rgb(203, 44, 251); */
+
+    }
+
+    /* left me image ko target karke */
+    .left img {
+        /* width for size  */
+        width: 57px;
+        margin: -4px -24px;
+        border-radius: 34px;
+    }
+
+    /* left m div ko target karte huye text alling center  */
+    .left div {
+        text-align: center;
+        margin: 4px -24px;
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        font-size: 15px;
+        color: white;
+        background-color: black;
+    }
+
+    .mid {
+        /* display block for to set width also for that  */
+        /* lisi ko v mid pr karna h to display width and margin se  */
+        display: block;
+        width: 690px;
+        margin: 10px auto;
+        /* background-color: black; */
+        /* border: 2px solid rgb(70, 254, 193); */
+
+    }
+
+    .right {
+        /* position absolute right top means shift from its parent  */
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        /* display inline block for element to cover spaces ehich is actually used */
+        display: inline-block;
+        /* border: 2px solid rgb(97, 226, 57); */
+    }
+
+    navbar {
+        display: inline-block;
+
+        /* width: 23px;
+    height: 23px; */
+    }
+
+    .navbar li {
+        /* ek hi ,\line m lana h to in blo dis  */
+        display: inline-block;
+        margin: 2px;
+        /* width: 23px;
+    height: 23px; */
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 13px 10px;
+        /* border: 2px solid blueviolet; */
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: cornflowerblue;
+    }
+
+    .btn {
+        margin: 0px 4px;
+        padding: 3px 14px;
+        background-color: black;
+        color: aliceblue;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-family: "Audiowide", sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(58, 56, 56);
+    }
+
+    .container{
+        /* border: 2px solid rgb(19, 18, 18); */
+        margin: 55px 649px;
+    padding: 34px 0px;
+        width: 33%;
+        border-radius: 13px;
+    }
+    .forms input{
+        text-align: center;
+    display: block;
+    width: 237px;
+    padding: 8px;
+    border: 3px solid black;
+    margin: 5px auto;
+    }
+    .container h1{
+        position:relative;
+        left: 80px;
+        color: rgb(231, 236, 234);
+        background-color: black;
+        width: 262px;
+        border-radius: 13px;
+        text-align: center;
+        
+    }
+    .container button{
+        display: block;
+    width: 23%;
+    margin: 13px 172px
+    }
+</style>
+
+<body>
+    <header class="head">
+        <!-- left box for forms -->
+        <div class="left">
+            <img src="img/download.png" alt="our logo">
+            <div>Raisahab <br> Fitness</div>
+        </div>
+
+        <!-- middle box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">join us</button><button class="btn">help</button>
+        </div>
+    </header>
+    <!-- now i want to add forms -->
+    <div class="container">
+        <h1>Register now</h1>
+        <form action="noaction.php">
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="forms">
+                <input type="text" name="" placeholder="Contact Number">
+            </div>
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
